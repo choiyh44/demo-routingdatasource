@@ -7,8 +7,8 @@ DataSourceconfig
 RoutingDatasource
 ```
 
-기본은 read write 데이터 소스를 사용하고,
-read only 데엍 소스를 사용하려면 서비스 클래스/메소드에 아래와 같이 readOnly transaction 어노테이션을 추가해야 합니다. 
+기본은 read write 데이터 소스를 사용하도록 설정되어 있습니다.
+반대로 read only 데이터 소스를 사용하려면 서비스 클래스/메소드에 아래와 같이 readOnly transaction 어노테이션을 추가해야 합니다. 
 ```angular2html
 @Transactional(readOnly = true)
 ```
