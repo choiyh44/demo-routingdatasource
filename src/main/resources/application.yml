@@ -11,10 +11,10 @@ spring:
         jdbc-url: jdbc:log4jdbc:postgresql://localhost:5432/postgres?characterEncoding=UTF-8
         driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
         username: postgres
-        password: ZAQ!2wsxcd
+        password: ${db-password}
     slave:
       hikari:
         jdbc-url: jdbc:log4jdbc:postgresql://localhost:5432/ro-demo?characterEncoding=UTF-8
         driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
         username: postgres
-        password: ZAQ!2wsxcd
+        password: ${db-password}
